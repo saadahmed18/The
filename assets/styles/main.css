@@ -5,11 +5,12 @@
 }
 :root {
   --white: #ffffff;
-  --main-color: #2947A9;
-  --secondary-color: #F9995D;
-  --title-color: #292E3D;
-  --text-color: #525B7A;
-  --alt-text-color: #C2C7D6;
+  --balck: #000000;
+  --main-color: #2947a9;
+  --secondary-color: #f9995d;
+  --title-color: #292e3d;
+  --text-color: #525b7a;
+  --alt-text-color: #c2c7d6;
   --section-padding: 60px;
   --h1-size: 72px;
   --h2-size: 36px;
@@ -34,5 +35,82 @@
 @media (min-width: 1200px) {
   .container {
     width: 1170px;
+  }
+}
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.logo a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--main-color);
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+}
+header {
+  position: sticky;
+  top: 0;
+  padding: 20px 0;
+  background-color: var(--white);
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ul a {
+  color: var(--balck);
+}
+header nav ul .active {
+  color: var(--secondary-color);
+}
+@media (max-width: 991px) {
+  header nav {
+    position: relative;
+  }
+  header nav label img {
+    cursor: pointer;
+  }
+  header nav input {
+    appearance: none;
+  }
+  header nav input:checked + ul {
+    display: block;
+  }
+  header nav ul {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    min-width: 250px;
+    border-radius: 8px;
+    background-color: #2947a9;
+  }
+  header nav ul li:not(:last-child) {
+    border-bottom: 1px solid rgb(0 0 0 / 0.2);
+  }
+  header nav ul a {
+    display: block;
+    padding: 10px;
+  }
+}
+@media (min-width: 992px) {
+  header nav label,
+  header nav input {
+    display: none;
+  }
+  header nav ul {
+    display: flex;
+    gap: 25px;
   }
 }
