@@ -17,6 +17,7 @@
   --h3-size: 20px;
   --text-size: 20px;
   --alt-text-size: 18px;
+  --line-height:1.5;
 }
 .container {
   padding: 0 15px;
@@ -53,6 +54,18 @@ a {
 }
 ul {
   list-style: none;
+}
+.d-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.section-title {
+  text-align: center;
+  margin-bottom: 100px;
+  font-size: var(--h2-size);
+  color: var(--title-color);
 }
 img {
   max-width: 100%;
@@ -129,4 +142,26 @@ header nav ul .active {
 .hero h1 {
   font-size: var(--h1-size);
   color: var(--title-color);
+}
+.our-reputation {
+  padding: var(--section-padding) 0;
+}
+.our-reputation .cards-list {
+  gap: 40px;
+}
+.our-reputation .cards-list .card {
+  width: 280px;
+  border: 2px solid rgb(0 0 0 / 0.1);
+  border-radius: 6px;
+  padding: 30px 20px;
+}
+.our-reputation .card h3 {
+  margin: 20px 0;
+  font-size: var(--h3-size);
+  font-weight: bold;
+  color: var(--title-color);
+}
+.our-reputation .card p {
+  color: var(--alt-text-color);
+  line-height: var(--line-height);
 }
