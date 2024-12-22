@@ -195,3 +195,47 @@ header nav ul .active {
   color: var(--main-color);
   background-color: var(--white);
 }
+.services {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+.services-list {
+  gap: 50px;
+}
+.services-list .service {
+  width: 280px;
+  text-align: center;
+  padding: 40px;
+  border-radius: 4px;
+  background-color: var(--white);
+}
+.services-list .service img {
+  padding-bottom: 25px;
+}
+
+.services-list .service a {
+  display: block;
+  padding-top: 25px;
+  position: relative;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--main-color);
+}
+.services-list .service a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 1px;
+  border-bottom: 2px solid rgb(0 0 0 / 0.1);
+}
+.services-list .service-2 {
+  background-color: var(--main-color);
+}
+.services-list .service-2 a {
+  color: var(--white);
+} 
+.services-list .service-2 a::after {
+  border-bottom: 2px solid var(--white);
+}
