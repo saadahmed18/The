@@ -19,6 +19,9 @@
   --alt-text-size: 18px;
   --line-height: 1.5;
 }
+html {
+  scroll-behavior: smooth;
+}
 .container {
   padding: 0 15px;
   margin: auto;
@@ -146,6 +149,11 @@ header nav ul .active {
   font-size: var(--h1-size);
   color: var(--title-color);
 }
+@media (max-width:991px) {
+  .hero h1 {
+    font-size: 60px;
+  }
+}
 .our-reputation .cards-list {
   gap: 40px;
 }
@@ -165,16 +173,21 @@ header nav ul .active {
   color: var(--alt-text-color);
   line-height: var(--line-height);
 }
-.about-us .container {
-  position: relative;
-}
-.about-us .col:last-child {
-  position: absolute;
-  right: -50px;
-  width: 400px;
+.about-us .col {
+  width: 100%;
   padding: 40px;
   color: var(--white);
   background-color: var(--main-color);
+}
+@media (min-width: 992px) {
+  .about-us .container {
+    position: relative;
+  }
+  .about-us .col {
+    position: absolute;
+    right: 0;
+    width: fit-content;
+  }
 }
 .about-us .col h2 {
   margin-bottom: 30px;
@@ -235,7 +248,7 @@ header nav ul .active {
 }
 .services-list .service-2 a {
   color: var(--white);
-} 
+}
 .services-list .service-2 a::after {
   border-bottom: 2px solid var(--white);
 }
