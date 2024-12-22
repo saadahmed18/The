@@ -17,7 +17,7 @@
   --h3-size: 20px;
   --text-size: 20px;
   --alt-text-size: 18px;
-  --line-height:1.5;
+  --line-height: 1.5;
 }
 .container {
   padding: 0 15px;
@@ -60,6 +60,9 @@ ul {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+section {
+  padding: var(--section-padding) 0;
 }
 .section-title {
   text-align: center;
@@ -143,9 +146,6 @@ header nav ul .active {
   font-size: var(--h1-size);
   color: var(--title-color);
 }
-.our-reputation {
-  padding: var(--section-padding) 0;
-}
 .our-reputation .cards-list {
   gap: 40px;
 }
@@ -164,4 +164,34 @@ header nav ul .active {
 .our-reputation .card p {
   color: var(--alt-text-color);
   line-height: var(--line-height);
+}
+.about-us .container {
+  position: relative;
+}
+.about-us .col:last-child {
+  position: absolute;
+  right: -50px;
+  width: 400px;
+  padding: 40px;
+  color: var(--white);
+  background-color: var(--main-color);
+}
+.about-us .col h2 {
+  margin-bottom: 30px;
+  font-size: var(--h2-size);
+  color: var(--white);
+}
+.about-us .col p {
+  margin-bottom: 20px;
+  line-height: var(--line-height);
+}
+.about-us .col a {
+  display: block;
+  width: fit-content;
+  padding: 15px;
+  margin-top: 50px;
+  border-radius: 4px;
+  font-weight: bold;
+  color: var(--main-color);
+  background-color: var(--white);
 }
