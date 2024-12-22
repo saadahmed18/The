@@ -60,6 +60,7 @@ img {
 header {
   position: sticky;
   top: 0;
+  z-index: 10;
   padding: 20px 0;
   background-color: var(--white);
 }
@@ -90,11 +91,11 @@ header nav ul .active {
   header nav ul {
     display: none;
     position: absolute;
-    top: 50px;
+    top: 58px;
     right: 0;
     min-width: 250px;
     border-radius: 8px;
-    background-color: #2947a9;
+    background-color: var(--white);
   }
   header nav ul li:not(:last-child) {
     border-bottom: 1px solid rgb(0 0 0 / 0.2);
@@ -113,4 +114,19 @@ header nav ul .active {
     display: flex;
     gap: 25px;
   }
+}
+.hero {
+  height: calc(100vh - 88px);
+  background-image: url(../images/hero.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero .container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.hero h1 {
+  font-size: var(--h1-size);
+  color: var(--title-color);
 }
