@@ -221,7 +221,7 @@ header nav ul .active {
   background-color: rgba(0, 0, 0, 0.04);
 }
 .services-list {
-  gap: 50px;
+  gap: 40px;
 }
 .services-list .service {
   width: 280px;
@@ -262,7 +262,7 @@ header nav ul .active {
   border-bottom: 2px solid var(--white);
 }
 .statistics .container {
-  gap: 70px;
+  gap: 40px;
 }
 @media (min-width: 992px) {
   .statistics .col {
@@ -275,20 +275,15 @@ header nav ul .active {
 }
 .statistics .col p {
   margin: 25px 0;
+  line-height: var(--line-height);
   color: var(--text-color);
 }
 .consultation {
   background-image: url(../images/image-2.webp);
 }
 .consultation .container {
-  justify-content: space-between;
-  gap: 50px;
+  gap: 40px;
   color: var(--white);
-}
-@media (max-width: 991px) {
-  .consultation .container {
-    justify-content: center;
-  }
 }
 .consultation .container h2 {
   font-size: var(--h2-size);
