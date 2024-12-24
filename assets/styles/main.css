@@ -58,14 +58,17 @@ a {
 ul {
   list-style: none;
 }
+img {
+  max-width: 100%;
+}
+section {
+  padding: var(--section-padding) 0;
+}
 .d-flex {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-}
-section {
-  padding: var(--section-padding) 0;
 }
 .section-title {
   text-align: center;
@@ -73,8 +76,14 @@ section {
   font-size: var(--h2-size);
   color: var(--title-color);
 }
-img {
-  max-width: 100%;
+.btn {
+  display: block;
+  width: 150px;
+  padding: 15px 25px;
+  text-align: center;
+  border-radius: 2px;
+  color: var(--white);
+  background-color: var(--main-color);
 }
 header {
   position: sticky;
@@ -149,7 +158,7 @@ header nav ul .active {
   font-size: var(--h1-size);
   color: var(--title-color);
 }
-@media (max-width:991px) {
+@media (max-width: 991px) {
   .hero h1 {
     font-size: 60px;
   }
@@ -251,4 +260,20 @@ header nav ul .active {
 }
 .services-list .service-2 a::after {
   border-bottom: 2px solid var(--white);
+}
+.statistics .container {
+  gap: 70px;
+}
+@media (min-width: 992px) {
+  .statistics .col {
+    width: 45%;
+  }
+}
+.statistics .col h2 {
+  font-size: var(--h2-size);
+  color: var(--main-color);
+}
+.statistics .col p {
+  margin: 25px 0;
+  color: var(--text-color);
 }
