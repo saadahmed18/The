@@ -426,3 +426,47 @@ textarea {
   border: none;
   cursor: pointer;
 }
+.contact-us .container {
+  justify-content: space-between;
+  gap: 40px;
+}
+@media (max-width: 991px) {
+  .contact-us .container {
+    justify-content: center;
+  }
+}
+.contact-us .container .col:first-child p {
+  margin-bottom: 15px;
+}
+.contact-us .container .col:first-child span {
+  font-weight: bold;
+  color: var(--main-color);
+}
+.contact-us label {
+  font-weight: bold;
+  color: var(--main-color);
+}
+.contact-us input {
+  display: inline-block;
+  padding: 10px;
+  margin: 20px 0 40px 0;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid rgb(0 0 0 / 0.1);
+}
+.contact-us .col div:last-child {
+  display: flex;
+  gap: 10px;
+}
+.contact-us .col:last-child a {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: var(--secondary-color);
+}
+.contact-us .col:last-child p {
+  margin: 15px 0;
+  font-weight: bold;
+  color: var(--main-color);
+}
