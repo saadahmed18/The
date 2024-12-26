@@ -70,6 +70,9 @@ section {
   align-items: center;
   flex-wrap: wrap;
 }
+.text-center {
+  text-align: center;
+}
 .section-title {
   text-align: center;
   margin-bottom: 100px;
@@ -303,8 +306,8 @@ header nav ul .active {
   align-items: stretch;
   gap: 25px;
 }
-@media (max-width:991px) {
-  .projects .container{
+@media (max-width: 991px) {
+  .projects .container {
     justify-content: center;
   }
 }
@@ -316,7 +319,7 @@ header nav ul .active {
     width: 55%;
   }
 }
-.projects .col-1 h2{
+.projects .col-1 h2 {
   margin-bottom: 25px;
   font-size: var(--h2-size);
   color: var(--title-color);
@@ -370,4 +373,56 @@ header nav ul .active {
 }
 .projects .col .card .info h3 {
   margin-bottom: 10px;
+}
+.informations {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+.informations h2 {
+  font-size: var(--h2-size);
+  color: var(--title-color);
+}
+.informations p {
+  margin: 25px 0;
+  line-height: var(--line-height);
+}
+.informations form div {
+  display: flex;
+  gap: 50px;
+}
+@media (max-width: 991px) {
+  .informations form div {
+    flex-wrap: wrap;
+    gap: 0;
+  }
+}
+.informations input[type="text"],
+.informations input[type="email"] {
+  display: block;
+  width: 50%;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+}
+@media (max-width: 991px) {
+  .informations input[type="text"],
+  .informations input[type="email"] {
+    width: 100%;
+  }
+}
+.informations input[type="text"],
+.informations input[type="email"],
+textarea {
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid rgb(0 0 0 / 0.1);
+}
+textarea {
+  width: 100%;
+  padding: 20px;
+}
+.informations .btn {
+  width: 200px;
+  margin: auto;
+  border: none;
+  cursor: pointer;
 }
