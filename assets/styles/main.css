@@ -470,3 +470,8 @@ textarea {
   font-weight: bold;
   color: var(--main-color);
 }
+footer {
+  padding: 30px 0;
+  color: var(--white);
+  background-color: var(--main-color);
+}
